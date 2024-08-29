@@ -45,7 +45,7 @@ body {
     margin-bottom: 10px;
 }
 
-.image {
+#foto1 {
     border-radius: 50%;
     margin-right: 50px;
 }
@@ -95,6 +95,12 @@ a:hover {
     text-decoration: underline;
 }
 
+.icon {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+
 @media only screen and (max-width: 1030px) {
     .flex {
         flex-direction: column; 
@@ -104,7 +110,7 @@ a:hover {
         max-width: 1000px;
     }
 
-    .image {
+    #foto1 {
         width: 100%;
     }
 
@@ -119,7 +125,7 @@ a:hover {
         flex-direction: column; 
     }
 
-    .image {
+    #foto1 {
         width: 100%;
     }
 
