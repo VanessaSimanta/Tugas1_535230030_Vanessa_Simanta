@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #fff0f0;
+    background-color: #eeebeb;
     color: #1c1c1c;
     line-height: 1.15;
     padding-top: 20px;
@@ -18,8 +18,13 @@ body {
     gap: 50px; 
 }
 
+.semua {
+    background-color: #ffd7d7;
+    padding: 20px;
+}
+
 .kanan {
-    background-color: #fff0f0;
+    background-color: #ffeded;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px #7a7979;
@@ -28,7 +33,7 @@ body {
 }
 
 .kiri {
-    background-color: #f0f0f0;
+    background-color: #f5fffe;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px #7a7979;
@@ -40,9 +45,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fcf1f1;
+    background-color: #ffeded;
     padding: 20px;
     margin-bottom: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #foto1 {
@@ -101,13 +108,16 @@ a:hover {
     gap: 10px;
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1200px) {
+    .kanan, .kiri {
+        min-width: 350px; 
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
     .flex {
         flex-direction: column; 
-    }
-
-    .kiri {
-        max-width: 1000px;
     }
 
     #foto1 {
@@ -132,6 +142,10 @@ a:hover {
     #header {
         flex-direction: column;
         text-align: center;
+    }
+
+    .kanan, .kiri {
+        min-width: 200px; 
     }
 
     h1 {
