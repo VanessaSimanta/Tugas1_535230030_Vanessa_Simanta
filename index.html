@@ -9,6 +9,7 @@
     <title>CV</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -135,16 +136,22 @@
                         </ol>
                         <p>Using PHP Laravel, HTML, CSS, Java Script, PostgreSQL</p>
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                 </div>
             </section> 
         </div>
-    </div> 
-    
+    </div>
 </body>
+
+<button id="toggle-theme">Dark Mode <i class="fa fa-moon-o"></i></button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const toggleThemeButton = document.getElementById('toggle-theme');
+    
+    toggleThemeButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+    });
+});
+
+</script>
 </html>

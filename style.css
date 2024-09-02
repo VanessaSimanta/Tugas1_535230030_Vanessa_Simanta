@@ -108,6 +108,25 @@ a:hover {
     gap: 10px;
 }
 
+.dark-theme {
+    background-color: #0d0020;
+}
+
+.dark-theme header, .dark-theme footer {
+    background-color: #0d0020;
+}
+
+button {
+    background-color: #543658; 
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2 rem;
+}
+
+
 @media only screen and (max-width: 1200px) {
     .kanan, .kiri {
         min-width: 350px; 
